@@ -1,20 +1,49 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Centering</title>
   <style>
-    pre {
-      font-family: 'Courier New', Courier, monospace;
+    body {
+      background-color: #666;
+    }
+    main {
+      /* needs a width to center! */
+      width: 800px;
+      margin: auto;
+      border: 1px solid #444;
+      background-color: #eee;
+    }
+    h1,
+    h2 {
+      text-align: center;
+    }
+    .flex-container {
+      display: flex;
+      flex-flow: wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+    .flex-container p {
+      border: 1px solid #000;
+      padding: 2rem;
+      width: 30%;
     }
   </style>
 </head>
 <body>
-  <h1>CSS Centering</h1>
-  <p>Do not center with the html deprecated element <pre><center></pre></p>
-  <p>Flexbox is <em>very</em> helpful in alignment but there are times you need something else.</p>
-  <p>You would think centering would be easy and sensible since it is such a common thing in websites, alas, it can be a bit tricky and not intuitive, at least to me</p>
-  <p>There is a guide at <a href="https://css-tricks.com/centering-css-complete-guide/">css tricks</a> that is as helpful as I have found.</p>
+  <main>
+    <h1>CSS Centering</h1>
+    <p>There is a guide at <a href="https://css-tricks.com/centering-css-complete-guide/">css tricks</a> that is as
+      helpful as I have found.</p>
+    <p>Do not center with the html deprecated element</p>
+    <h2>Also remember flexbox!</h2>
+    <div class="flex-container">
+      <p>Flexbox is <em>very</em> helpful in alignment but there are times you need something else.</p>
+      <p>You would think centering would be easy and sensible since it is such a common thing in websites, alas, it can be a bit tricky and not intuitive, at least to me. Here is more text to make this box longer :)</p>
+    </div>
+  </main>
 </body>
 </html>

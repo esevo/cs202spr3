@@ -4,7 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Centering</title>
+  <!-- inline stylesheets are for examples only -->
   <style>
+    * {
+      /* makes more sense to me by reducing math, for example on this page
+      the width is 800px max. As it makes sense to me. Without this it would
+      be 800 plus margins and borders */
+      box-sizing: border-box; /* makes more sense to me by reducing math */
+    }
     body {
       background-color: #666;
     }
@@ -17,6 +24,7 @@
       margin: auto; /* centers */
       border: 1px solid #444;
       background-color: #eee;
+      padding: .5rem;
     }
     h1,
     h2 {
@@ -39,6 +47,9 @@
 <body>
   <main>
     <h1>CSS Centering</h1>
+    <p>In this page the whole 'page' is centered using margin: auto,
+      the h1 and h2 are using text-align: center, and the boxes are
+      using flexbox!</p>
     <p>There is a guide at <a href="https://css-tricks.com/centering-css-complete-guide/">css tricks</a> that is as
       helpful as I have found.</p>
     <p>Do not center with the html deprecated element</p>

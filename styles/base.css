@@ -1,1 +1,35 @@
 /* main stylesheet */
+/*
+  makes boxes borders etc actually make sense :)
+  Here is link to better explain: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+*/
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: .5rem;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px dotted #03037a;
+  color: #03037a;
+  padding: .5rem 1rem;
+}
+
+a:hover {
+  background-color: #eee;
+  padding: .4rem 1rem .5rem;
+}
+
+

@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,31 +11,37 @@
       /* makes more sense to me by reducing math, for example on this page
       the width is 800px max. As it makes sense to me. Without this it would
       be 800 plus margins and borders */
-      box-sizing: border-box; 
+      box-sizing: border-box;
     }
+
     body {
       background-color: #666;
     }
+
     main {
       /* 
         needs a width to center! AND we want it to work on small screens hence we use a max-width 
       */
       max-width: 800px;
-      margin: auto; /* centers */
+      margin: auto;
+      /* centers */
       border: 1px solid #444;
       background-color: #eee;
-       padding: .5rem;
+      padding: .5rem;
     }
+
     h1,
     h2 {
       text-align: center;
     }
+
     .flex-container {
       display: flex;
       flex-flow: wrap;
       justify-content: space-around;
       align-items: flex-start;
     }
+
     /* this means only p elements inside flex-container will be affected */
     .flex-container p {
       border: 1px solid #000;
@@ -43,20 +50,33 @@
     }
   </style>
 </head>
+
 <body>
   <main>
     <h1>CSS Centering</h1>
-    <p>In this page the whole 'page' is centered using margin: auto,
-      the h1 and h2 are using text-align: center, and the boxes are
-      using flexbox!</p>
-    <p>There is a guide at <a href="https://css-tricks.com/centering-css-complete-guide/">css tricks</a> that is as
+    <p>In this page the whole 'page' is centered using margin: auto, the h1
+      and h2 are using text-align: center, and the
+      boxes are using flexbox!
+
+
+
+
+    </p>
+    <p>There is a guide at <a
+        href="https://css-tricks.com/centering-css-complete-guide/">css
+        tricks</a> that is as
       helpful as I have found.</p>
     <p>Do not center with the html deprecated element!</p>
     <h2>Also remember flexbox!</h2>
     <div class="flex-container">
-      <p>Flexbox is <em>very</em> helpful in alignment but there are times you need something else.</p>
-      <p>You would think centering would be easy and sensible since it is such a common thing in websites, alas, it can be a bit tricky and not intuitive, at least to me. Here is more text to make this box longer :)</p>
+      <p>Flexbox is <em>very</em> helpful in alignment but there are times
+        you need something else.</p>
+      <p>You would think centering would be easy and sensible since it is
+        such a common thing in websites, alas, it can be a bit tricky and
+        not intuitive, at least to me. Here is more text to make this box
+        longer :)</p>
     </div>
   </main>
 </body>
+
 </html>

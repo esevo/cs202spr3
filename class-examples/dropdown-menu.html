@@ -5,87 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mobile Dropdown Menu</title>
-  <style>
-    body {
-      /* reset */
-      margin: 0;
-      padding: 0;
-    }
-
-    nav {
-      font-family: "Comic Sans MS", cursive, sans-serif;
-      background: #333;
-      padding: 10px;
-    }
-
-    nav button {
-      /* allows rotate to work */
-      display: flex;
-      background-color: #444;
-      color: #fff;
-      padding: 10px;
-      border: none;
-      cursor: pointer;
-      width: 100%;
-      text-align: left;
-    }
-
-    span {
-      padding: 0 5px;
-    }
-
-    .rotate {
-      transform: rotate(90deg);
-      transition: transform 0.5s ease;
-    }
-
-    nav button:hover {
-      background-color: #555;
-    }
-
-    .dropdown {
-      display: none;
-      background: #555;
-    }
-
-    .dropdown.show {
-      display: block;
-    }
-
-    .dropdown a {
-      color: #fff;
-      padding: 10px;
-      /* make the links stack */
-      display: block;
-      text-decoration: none;
-    }
-
-    .dropdown a:hover {
-      background: #666;
-    }
-
-    /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries */
-    @media (min-width: 1024px) {
-      body {
-        max-width: 1024px;
-        margin: 0 auto;
-      }
-
-      nav button {
-        display: none;
-      }
-
-      .dropdown {
-        display: flex;
-        justify-content: space-evenly;
-      }
-
-      .dropdown a {
-        display: inline-block;
-        /* padding: 5px 80px; */
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles/base.css">
 </head>
 
 <body>
@@ -93,13 +13,16 @@
     <!-- https://www.w3schools.com/charsets/ref_utf_geometric.asp -->
     <button onclick="toggleMenu()">Menu <span>➤</span></button>
     <div class="dropdown" id="menu">
-      <a href="../index.html">Home</a>
-      <a href="#">Page2</a>
-      <a href="#">Page3</a>
-      <a href="#">Page4</a>
+      <!-- your home would be index.html, mine isn't because it is an example -->
+      <a href="dropdown-menu.html">Home</a>
+      <a href="pages/contactus.html">Contact Us</a>
+      <a href="pages/gophers.html">Gophers</a>
+      <a href="pages/wombats.html">Wombats</a>
+      <a href="pages/squirrels.html">Squirrels</a>
     </div>
   </nav>
 
+  <h1>Mobile Dropdown Menu</h1>
   <!-- 
     Scripts are often in the <head> </head> or just before the closing body tag.
     Putting at the bottom helps ensure that the script runs after the DOM (think "page") is loaded. 
